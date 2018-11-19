@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<root>
+  <definitions/>
+  <key name="$schema">http://json-schema.org/draft-07/schema#</key>
+  <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL</key>
+  <type>object</type>
+  <title>The Root Schema</title>
+  <required>
+    <item>checked</item>
+    <item>dimensions</item>
+    <item>id</item>
+    <item>name</item>
+    <item>price</item>
+    <item>tags</item>
+  </required>
+  <properties>
+    <checked>
+      <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL#/properties/checked</key>
+      <type>boolean</type>
+      <title>The Checked Schema</title>
+      <default>False</default>
+      <examples>
+        <item>False</item>
+      </examples>
+    </checked>
+    <dimensions>
+      <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL#/properties/dimensions</key>
+      <type>object</type>
+      <title>The Dimensions Schema</title>
+      <required>
+        <item>width</item>
+        <item>height</item>
+      </required>
+      <properties>
+        <width>
+          <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL#/properties/dimensions/properties/width</key>
+          <type>integer</type>
+          <title>The Width Schema</title>
+          <default>0</default>
+          <examples>
+            <item>5</item>
+          </examples>
+        </width>
+        <height>
+          <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL#/properties/dimensions/properties/height</key>
+          <type>integer</type>
+          <title>The Height Schema</title>
+          <default>0</default>
+          <examples>
+            <item>10</item>
+          </examples>
+        </height>
+      </properties>
+    </dimensions>
+    <id>
+      <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL#/properties/id</key>
+      <type>integer</type>
+      <title>The Id Schema</title>
+      <default>0</default>
+      <examples>
+        <item>1</item>
+      </examples>
+    </id>
+    <name>
+      <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL#/properties/name</key>
+      <type>string</type>
+      <title>The Name Schema</title>
+      <default/>
+      <examples>
+        <item>A green door</item>
+      </examples>
+      <pattern>^(.*)$</pattern>
+    </name>
+    <price>
+      <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL#/properties/price</key>
+      <type>number</type>
+      <title>The Price Schema</title>
+      <default>0.0</default>
+      <examples>
+        <item>12.5</item>
+      </examples>
+    </price>
+    <tags>
+      <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL#/properties/tags</key>
+      <type>array</type>
+      <title>The Tags Schema</title>
+      <items>
+        <key name="$id">http://stock-whatif.herokuapp.com/whatif/AAPL#/properties/tags/items</key>
+        <type>string</type>
+        <title>The Items Schema</title>
+        <default/>
+        <examples>
+          <item>home</item>
+          <item>green</item>
+        </examples>
+        <pattern>^(.*)$</pattern>
+      </items>
+    </tags>
+  </properties>
+</root>
