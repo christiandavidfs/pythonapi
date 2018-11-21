@@ -1,0 +1,75 @@
+Testing: AAPL
+ Status= 200
+
+{'high': {'date': '2018-10-03', 'price': '232.07', 'value': 410.71748599999995, 'shares': 1.7697999999999998}, 'low': {'date': '2018-02-08', 'price': '155.15', 'value': 274.58446999999995, 'shares': 1.7697999999999998}}
+
+High :{'date': '2018-10-03', 'price': '232.07', 'value': 410.71748599999995, 'shares': 1.7697999999999998}
+Low :{'date': '2018-02-08', 'price': '155.15', 'value': 274.58446999999995, 'shares': 1.7697999999999998}
+
+Values difference
+All the data types for low are correct.
+All the data types for high are correct.
+136.133016
+---------------------------------------------------------
+Test Passed: Higher value is really higher
+---------------------------------------------------------
+Status 200 - Test Passed
+---------------------------------------------------------
+ Passed. The response have content
+---------------------------------------------------------
+Testing: FB
+ Status= 200
+
+{'high': {'date': None, 'price': None, 'value': 0.0, 'shares': 0.0}, 'low': {'date': None, 'price': None, 'value': 0.0, 'shares': 0.0}}
+
+High :{'date': None, 'price': None, 'value': 0.0, 'shares': 0.0}
+Low :{'date': None, 'price': None, 'value': 0.0, 'shares': 0.0}
+
+Values difference
+Wrong data types for low.
+Wrong data types for high.
+0.0
+---------------------------------------------------------
+Test Failed: Higher is in fact lower or equal
+---------------------------------------------------------
+Status 200 - Test Passed
+---------------------------------------------------------
+Failed. The response have null fields
+Testing: HD
+ Status= 200
+
+{'high': {'date': '2018-09-11', 'price': '213.85', 'value': 361.51342500000004, 'shares': 1.6905000000000001}, 'low': {'date': '2018-11-20', 'price': '169.05', 'value': 285.77902500000005, 'shares': 1.6905000000000001}}
+
+High :{'date': '2018-09-11', 'price': '213.85', 'value': 361.51342500000004, 'shares': 1.6905000000000001}
+Low :{'date': '2018-11-20', 'price': '169.05', 'value': 285.77902500000005, 'shares': 1.6905000000000001}
+
+Values difference
+All the data types for low are correct.
+All the data types for high are correct.
+75.7344
+---------------------------------------------------------
+Test Passed: Higher value is really higher
+---------------------------------------------------------
+Status 200 - Test Passed
+---------------------------------------------------------
+ Passed. The response have content
+---------------------------------------------------------
+Testing: MSFT Status= 200
+
+{'high': {'date': '2018-10-01', 'price': '115.61', 'value': 117.58693099999999, 'shares': 1.0171}, 'low': {'date': '2018-02-08', 'price': '85.01', 'value': 86.46367099999999, 'shares': 1.0171}}
+
+High :{'date': '2018-10-01', 'price': '115.61', 'value': 117.58693099999999, 'shares': 1.0171}
+Low :{'date': '2018-02-08', 'price': '85.01', 'value': 86.46367099999999, 'shares': 1.0171}
+
+Values difference
+All the data types for low are correct.
+All the data types for high are correct.
+31.123260000000002
+---------------------------------------------------------
+Test Passed: Higher value is really higher
+---------------------------------------------------------
+Status 200 - Test Passed
+---------------------------------------------------------
+ Passed. The response have content
+---------------------------------------------------------
+
